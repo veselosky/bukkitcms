@@ -1,47 +1,38 @@
 <template>
-  <header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-8">
-        <a class="blog-header-logo text-dark" href="/"
-          >{{ site.name }}
-          <span v-if="site.tagline">| {{ site.tagline }}</span></a
-        >
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="text-muted" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="mx-3"
-          >
-            <circle cx="10.5" cy="10.5" r="7.5"></circle>
-            <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-          </svg>
-        </a>
-        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-      </div>
-    </div>
+  <header
+    class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+  >
+    <router-link
+      to="/"
+      class="
+        d-flex
+        align-items-center
+        mb-3 mb-md-0
+        me-md-auto
+        text-dark text-decoration-none
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="32"
+        fill="currentColor"
+        stroke="blue"
+        class="bi bi-bucket me-2"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0a4.5 4.5 0 0 1 8.945 0H3.527zm9.892 1-1.286 8.574a.5.5 0 0 1-.494.426H4.36a.5.5 0 0 1-.494-.426L2.58 6h10.838z"
+        />
+      </svg>
+      <span class="fs-4">Bukkit CMS | I has a bukkit!</span>
+    </router-link>
   </header>
 </template>
 
 <script>
 export default {
   name: "Masthead",
-  data() {
-    return {
-      site: {
-        name: "Bukkit CMS",
-        tagline: "I has a bukkit!",
-      },
-    };
-  },
 };
 </script>
 
