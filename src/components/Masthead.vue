@@ -43,6 +43,11 @@
       <li><a href="#" class="nav-link px-2 link-primary">Sites</a></li>
       <li><a href="#" class="nav-link px-2 link-primary">Apps</a></li>
       <li><a href="#" class="nav-link px-2 link-primary">Themes</a></li>
+      <li>
+        <router-link to="/about" class="nav-link px-2 link-primary"
+          >About</router-link
+        >
+      </li>
     </ul>
     <div class="dropdown col-md-3 text-end">
       <a
