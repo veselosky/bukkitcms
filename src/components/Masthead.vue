@@ -40,7 +40,11 @@
     <ul
       class="nav d-flex col-12 col-md-auto mb-2 justify-content-center mb-md-0"
     >
-      <li><a href="#" class="nav-link px-2 link-primary">Sites</a></li>
+      <li>
+        <router-link to="/sites" class="nav-link px-2 link-primary"
+          >Sites</router-link
+        >
+      </li>
       <li><a href="#" class="nav-link px-2 link-primary">Apps</a></li>
       <li><a href="#" class="nav-link px-2 link-primary">Themes</a></li>
       <li>
